@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 13 * * *' # Runs at 13:00 UTC (22:00 KST) every day
 
+permissions:
+  contents: write
+
 jobs:
   auto-commit:
     runs-on: ubuntu-latest
